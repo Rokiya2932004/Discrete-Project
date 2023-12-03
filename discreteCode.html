@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Discrete Mathematical</title>
+    <style>
+        body {
+            background-image: url(main.jpg);
+            background-size: cover;
+        }
+
+        table {
+            margin-left: 60px;
+        }
+
+        .centerTitle {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            font-weight: bold;
+            font-style: italic;
+            border: 4px solid black;
+            border-radius: 15px;
+            margin: 4px auto;
+            width: 450px;
+        }
+
+        tr {
+            text-align: center;
+        }
+
+        .need {
+            border: 3px solid black;
+            margin: 10px;
+            width: 100px;
+            padding: 5px;
+        }
+
+        .sol {
+            border: 3px solid black;
+            margin: 10px;
+            width: 300px;
+            padding: 5px;
+        }
+
+        .sol2 {
+            border: 3px solid black;
+            margin: 10px;
+            width: 230px;
+            padding: 5px;
+        }
+
+        h4 {
+            margin-left: 60px;
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+
+        h3 {
+            margin-left: 40px;
+        }
+
+        p {
+            margin-left: 60px;
+        }
+
+        i {
+            margin-left: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="centerTitle">" Preposition Problem "</h1>
+    </div>
+
+    <h2 class="need"> Prove : </h2>
+    <h2>( p ∧ q ) → ( p ∨ q ) ≡ T </h2>
+
+    <h2 class="sol">* Solution by truth table :- </h2><br>
+    <table border="3">
+        <tr>
+            <th style="width: 45px;"> p </th>
+            <th style="width: 45px;"> q </th>
+            <th style="width: 60px;"> p ∧ q </th>
+            <th style="width: 60px;"> p ∨ q </th>
+            <th style="width: 150px;"> ( p ∧ q ) → ( p ∨ q ) </th>
+        </tr>
+
+        <tr>
+            <td>T</td>
+            <td>T</td>
+            <td>
+                <center>T</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>T</td>
+            <td>F</td>
+            <td>
+                <center>F</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>F</td>
+            <td>T</td>
+            <td>
+                <center>F</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>F</td>
+            <td>F</td>
+            <td>
+                <center>F</center>
+            </td>
+            <td>
+                <center>F</center>
+            </td>
+            <td>
+                <center>T</center>
+            </td>
+        </tr>
+    </table>
+
+    <h4>∴ ( p ∧ q ) → ( p ∨ q ) ≡ T</h4>
+    <hr>
+    <h2 class="sol2"> * Solution by laws :- </h2>
+    <p>
+        <bold>L.H.S</bold> :
+    </p>
+    <p>
+        ≡ ¬( p ∧ q ) ∨ ( p ∨ q )
+        <br>
+        <i>(Implicated law)</i>
+    </p>
+
+    <p>
+        ≡ (¬p ∨ ¬q) ∨ ( p ∨ q )
+        <br>
+        <i>(Demorgan law)</i>
+    </p>
+
+    <p>
+        ≡ (¬p ∨ p) ∨ ( ¬q ∨ q )
+        <br>
+        <i>(Associative laws)</i>
+    </p>
+    <p>
+        ≡ T ∨ T
+        <br>
+        <i>(Negation law)</i>
+    </p>
+    <p>
+        ≡ T
+    </p>
+</body>
+
+</html>
+<!--   -->
